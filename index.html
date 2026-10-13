@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="pt-BR" class="loading">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viva Assessoria Condominial | Santa Cruz do Sul</title>
+<meta name="description" content="Administração de condomínios e síndico profissional em Santa Cruz do Sul desde 2014. Financeiro, pessoal, jurídico e rotina administrativa, com taxa fixa e sem surpresas.">
+<meta name="theme-color" content="#0d1726">
+<!-- DEPLOY STEP: trocar og:image e og:url pelos endereços absolutos do site no ar -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Viva Assessoria Condominial">
+<meta property="og:description" content="Seu condomínio em pé, firme e em ordem. Desde 2014 em Santa Cruz do Sul.">
+<meta property="og:image" content="tower.jpg">
+<meta property="og:url" content="https://vivaassessoriacondominial.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1726'/%3E%3Cpath d='M10 24 32 11l22 13z' fill='%23c9a46a'/%3E%3Cg fill='%23ece6da'%3E%3Crect x='15' y='27' width='5' height='20'/%3E%3Crect x='25' y='27' width='5' height='20'/%3E%3Crect x='34' y='27' width='5' height='20'/%3E%3Crect x='44' y='27' width='5' height='20'/%3E%3Crect x='10' y='49' width='44' height='4'/%3E%3C/g%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" as="font" type="font/woff2" href="marcellus.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="manrope.woff2" crossorigin>
+<link rel="preload" as="image" href="city.jpg" imagesrcset="city-m.jpg 1080w, city.jpg 1920w" imagesizes="(max-width: 900px) 170vw, 100vw">
+<style>
+@font-face{font-family:"Marcellus";font-style:normal;font-weight:400;font-display:swap;src:url(marcellus.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 700;font-display:swap;src:url(manrope.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(plexmono-400.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(plexmono-500.woff2) format("woff2")}
+:root{
+  --canvas:#0d1726;
+  --canvas-2:#101c2f;
+  --panel:#15243a;
+  --panel-2:#1b2d47;
+  --stone:#ece6da;
+  --stone-2:#c9c1b2;
+  --accent:#c9a46a;
+  --accent-hover:#dcbb85;
+  --accent-muted:rgba(201,164,106,.18);
+  --text-primary:#f1ece3;
+  --text-secondary:#a9b4c5;
+  --line:rgba(236,230,218,.12);
+  --line-strong:rgba(236,230,218,.4);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --ease-io:cubic-bezier(.65,0,.35,1);
+  --display:"Marcellus",Georgia,serif;
+  --body:"Manrope",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --gut:clamp(16px,6vw,96px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden;overflow-x:clip;background:var(--canvas)}
+html:not(.lenis){scroll-behavior:smooth}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+html.js.loading{overflow:hidden}
+body{overflow-x:hidden;overflow-x:clip;background:var(--canvas);color:var(--text-primary);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+::selection{background:var(--accent);color:#14110b}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:#14110b;padding:10px 16px;border-radius:8px;z-index:300}
+.skip:focus{left:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== Abertura ===== */
+.loader{display:none}
+html.js .loader{display:grid;position:fixed;inset:0;z-index:200;place-items:center;background:var(--canvas);transition:transform 1.15s var(--ease-io)}
+.loader.out{transform:translateY(-100%)}
+.loader .lw{display:flex;flex-direction:column;align-items:center;gap:22px;transition:opacity .5s,transform 1.15s var(--ease-io)}
+.loader.out .lw{opacity:0;transform:translateY(40vh)}
+.loader svg{width:92px;height:92px;overflow:visible}
+.loader svg path,.loader svg rect{fill:none;stroke:var(--accent);stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1;animation:ldraw 1.3s var(--ease-out) forwards}
+.loader svg rect:nth-of-type(1){animation-delay:.15s}.loader svg rect:nth-of-type(2){animation-delay:.25s}.loader svg rect:nth-of-type(3){animation-delay:.35s}.loader svg rect:nth-of-type(4){animation-delay:.45s}.loader svg rect:nth-of-type(5){animation-delay:.55s}
+@keyframes ldraw{to{stroke-dashoffset:0}}
+.loader .lc{font-family:var(--display);font-size:15px;letter-spacing:.4em;color:var(--stone);padding-left:.4em}
+.loader .lp{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--text-secondary);font-variant-numeric:tabular-nums;width:4ch;text-align:center}
+.loader .ll{width:140px;height:1px;background:var(--line);overflow:hidden}
+.loader .ll i{display:block;height:100%;background:var(--accent);transform:scaleX(var(--lp,0));transform-origin:left}
+
+/* ===== Navegação ===== */
+.top{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:22px var(--gut);transition:background .6s var(--ease-out),padding .6s var(--ease-out),border-color .6s,transform .6s var(--ease-out);border-bottom:1px solid transparent}
+.top.solid{background:rgba(13,23,38,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:13px;padding-bottom:13px;border-color:var(--line)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font-family:var(--display);font-weight:400;font-size:21px;letter-spacing:.18em;display:block;line-height:1.1}
+.brand small{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;color:var(--text-secondary);text-transform:uppercase;line-height:1.3}
+.links{display:flex;gap:30px;align-items:center}
+.links a.l{text-decoration:none;font-size:14px;color:var(--stone-2);position:relative;padding:6px 0}
+.links a.l::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease-out)}
+.links a.l:hover::after{transform:scaleX(1);transform-origin:left}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line-strong);background:rgba(13,23,38,.4);cursor:pointer;place-items:center}
+.burger span{display:block;width:18px;height:1px;background:var(--stone);position:relative;transition:transform .5s var(--ease-out),background .3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1px;background:var(--stone);transition:transform .5s var(--ease-out)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:960px){.links a.l{display:none}.burger{display:grid}.links{gap:10px}.links .btn{padding:11px 18px;font-size:13px}}
+@media (max-width:420px){.links .btn{display:none}}
+.menu{position:fixed;inset:0;z-index:55;background:var(--canvas-2);display:flex;flex-direction:column;justify-content:center;padding:0 var(--gut);gap:6px;clip-path:inset(0 0 100% 0);transition:clip-path .8s var(--ease-io);visibility:hidden}
+.menu-open .menu{clip-path:inset(0);visibility:visible}
+.menu a{font-family:var(--display);font-size:clamp(36px,9vw,60px);text-decoration:none;line-height:1.25;display:flex;gap:18px;align-items:baseline}
+.menu a small{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.2em}
+.menu .mfoot{margin-top:40px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--text-secondary)}
+
+/* ===== Botões ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:#14110b;font-weight:700;font-size:15px;text-decoration:none;padding:15px 28px;border-radius:999px;border:0;cursor:pointer;transition:background .35s var(--ease-out),transform .5s var(--ease-out),box-shadow .35s;box-shadow:0 10px 34px -12px rgba(201,164,106,.65);white-space:nowrap}
+.btn:hover{background:var(--accent-hover)}
+.btn.ghost{background:rgba(13,23,38,.25);color:var(--text-primary);border:1px solid var(--line-strong);box-shadow:none}
+.btn.ghost:hover{border-color:var(--stone);background:rgba(236,230,218,.08)}
+.btn svg{width:18px;height:18px;flex:none}
+@media (pointer:coarse){.btn{min-height:48px}}
+
+/* ===== HERO: sequência cinematográfica guiada pela rolagem ===== */
+.hero{position:relative;height:680vh;background:#0a1220}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:28vh;background:linear-gradient(180deg,rgba(13,23,38,0),var(--canvas));pointer-events:none;z-index:2}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;contain:paint}
+.layer{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--ox) var(--oy);transform-origin:var(--ox) var(--oy);will-change:transform,opacity;backface-visibility:hidden}
+.layer:not(:first-child){opacity:0}
+.bloom{position:absolute;width:120vmax;height:120vmax;margin:-60vmax 0 0 -60vmax;border-radius:50%;background:radial-gradient(circle,rgba(255,232,190,.95) 0%,rgba(255,206,140,.55) 18%,rgba(240,170,90,.18) 38%,rgba(240,170,90,0) 62%);opacity:0;will-change:transform,opacity;pointer-events:none}
+.shade{position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(90deg,rgba(8,13,24,.86) 0%,rgba(8,13,24,.62) 30%,rgba(8,13,24,.12) 58%,rgba(8,13,24,0) 72%),
+  linear-gradient(180deg,rgba(8,13,24,.55) 0%,rgba(8,13,24,0) 22%,rgba(8,13,24,0) 72%,rgba(8,13,24,.7) 100%)}
+.grain{position:absolute;inset:0;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+.motes{position:absolute;inset:0;pointer-events:none}
+.motes i{position:absolute;bottom:-12px;width:3px;height:3px;border-radius:50%;background:radial-gradient(circle,#fff1d2,rgba(243,216,164,0) 70%);opacity:0;animation:rise 16s linear infinite;will-change:transform,opacity}
+@keyframes rise{0%{transform:translate3d(0,0,0);opacity:0}12%{opacity:.9}100%{transform:translate3d(-30px,-95vh,0);opacity:0}}
+
+.band{position:absolute;left:var(--gut);top:50%;transform:translateY(-50%);width:min(680px,calc(100% - 2*var(--gut)));opacity:0;visibility:hidden}
+.band.first{opacity:1;visibility:visible}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:14px;margin-bottom:26px;opacity:var(--ks,1)}
+.kicker::before{content:"";width:38px;height:1px;background:currentColor;transform:scaleX(var(--ks,1));transform-origin:left}
+.band h1,.band h2{font-family:var(--display);font-weight:400;font-size:clamp(42px,6vw,94px);line-height:1.02;letter-spacing:-.012em;text-shadow:0 2px 30px rgba(5,9,18,.35)}
+html:not(.js) .band.first{--k:1}
+.band p{margin-top:24px;font-size:clamp(17px,1.45vw,20px);line-height:1.6;color:var(--stone);max-width:40ch;opacity:var(--ks,1);transform:translate3d(0,calc((1 - var(--ks,1))*14px),0)}
+.band .row{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px;opacity:var(--kb,1);transform:translate3d(0,calc((1 - var(--kb,1))*16px),0)}
+.m{display:inline-block;overflow:hidden;vertical-align:top;padding:.06em .04em .16em;margin:-.06em -.04em -.16em}
+.w{display:inline-block}
+.band .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*3.2,1);transform:translate3d(0,calc((1 - var(--kc))*112%),0) rotate(calc((1 - var(--kc))*4deg));transform-origin:0 100%;will-change:transform}
+.band{--ks:clamp(0,(var(--k,0) - .42)*2.6,1);--kb:clamp(0,(var(--k,0) - .62)*2.8,1)}
+
+.chapters{position:absolute;right:var(--gut);top:50%;transform:translateY(-50%);display:flex;gap:20px;align-items:stretch}
+.chapters .bar{width:1px;background:var(--line-strong);position:relative}
+.chapters .bar i{position:absolute;inset:0;background:var(--accent);transform:scaleY(0);transform-origin:top;will-change:transform}
+.chapters ol{list-style:none;display:flex;flex-direction:column;gap:6px}
+.chapters button{background:none;border:0;cursor:pointer;display:flex;gap:12px;align-items:baseline;padding:8px 0;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(236,230,218,.5);transition:color .5s var(--ease-out)}
+.chapters button b{font-weight:500;color:inherit}
+.chapters button span{opacity:0;transform:translateX(-6px);transition:opacity .5s var(--ease-out),transform .5s var(--ease-out)}
+.chapters button.on{color:var(--stone)}
+.chapters button.on b{color:var(--accent)}
+.chapters button.on span,.chapters:hover button span{opacity:1;transform:none}
+.cue{position:absolute;left:var(--gut);bottom:34px;display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--stone-2);text-transform:uppercase}
+.cue span{width:1px;height:44px;background:rgba(236,230,218,.25);position:relative;overflow:hidden}
+.cue span::after{content:"";position:absolute;inset:0;background:var(--accent);animation:cue 2.2s var(--ease-io) infinite}
+@keyframes cue{0%{transform:translateY(-100%)}60%,100%{transform:translateY(100%)}}
+@media (max-height:600px){.cue,.chapters{display:none}}
+
+@media (max-width:900px){
+  .hero{height:600vh}
+  .shade{background:linear-gradient(180deg,rgba(8,13,24,.55) 0%,rgba(8,13,24,0) 20%,rgba(8,13,24,.15) 42%,rgba(8,13,24,.78) 68%,rgba(8,13,24,.94) 100%)}
+  .band{top:auto;bottom:max(70px,9svh);transform:none}
+  .band h1,.band h2{font-size:clamp(38px,10.5vw,60px)}
+  .band p{font-size:16px;margin-top:16px}
+  .kicker{margin-bottom:16px;font-size:11px}
+  .band .row{margin-top:24px}
+  .chapters{display:none}
+  .cue{display:none}
+}
+/* Movimento reduzido: herói estático, completo */
+@media (prefers-reduced-motion: reduce){
+  .hero{height:auto}
+  .stage{position:relative;height:100vh;height:100svh}
+  .layer:not(:first-child),.bloom,.band:not(.first),.chapters,.cue,.motes{display:none}
+  .band.first{--k:1}
+}
+
+/* ===== Seções ===== */
+section{position:relative;padding:clamp(100px,13vw,180px) var(--gut)}
+.wrap{max-width:1280px;margin:0 auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.title{font-family:var(--display);font-weight:400;font-size:clamp(36px,4.8vw,68px);line-height:1.06;letter-spacing:-.01em;max-width:17ch}
+.lede{color:var(--text-secondary);font-size:clamp(17px,1.35vw,19px);max-width:52ch;margin-top:24px}
+html.js .reveal{opacity:0;transform:translate3d(0,34px,0);transition:opacity 1.2s var(--ease-out),transform 1.2s var(--ease-out)}
+html.js .reveal.in{opacity:1;transform:none}
+html.js .split .w{transform:translate3d(0,112%,0);transition:transform 1.25s var(--ease-out);transition-delay:calc(var(--i,0)*55ms)}
+html.js .split.in .w{transform:none}
+
+/* Declaração */
+.statement{padding-top:clamp(110px,14vw,200px);padding-bottom:clamp(80px,10vw,140px)}
+.statement p.big{font-family:var(--display);font-size:clamp(30px,3.9vw,58px);line-height:1.18;max-width:24ch;letter-spacing:-.005em}
+.statement .sw{opacity:.16}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(70px,9vw,120px);border-top:1px solid var(--line)}
+.stat{padding:30px 26px 6px 0;border-right:1px solid var(--line);margin-right:26px}
+.stat:last-child{border-right:0;margin-right:0}
+.stat b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(44px,5vw,76px);line-height:1;color:var(--stone);font-variant-numeric:tabular-nums}
+.stat b sup{font-size:.4em;color:var(--accent);vertical-align:top;margin-left:4px}
+.stat>span{display:block;margin-top:14px;font-size:14px;color:var(--text-secondary);max-width:22ch}
+@media (max-width:820px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0;margin-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line);padding-bottom:28px}}
+
+/* ===== Assinatura: o templo de quatro colunas ===== */
+.services{padding-top:clamp(60px,8vw,120px)}
+.svc-head{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+@media (max-width:900px){.svc-head{grid-template-columns:1fr;gap:10px}}
+.temple{position:relative}
+.ped{position:relative;margin:0 -1.2%;height:clamp(60px,8vw,104px)}
+.ped svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ped .pf{fill:url(#pg)}
+.ped .ps{fill:none;stroke:var(--accent);stroke-width:1.3;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--draw,1))}
+.colrow{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.5vw,22px)}
+.slot{overflow:hidden;padding-top:6px}
+.col{position:relative;height:100%;background:linear-gradient(180deg,#1f3352,var(--panel) 70%);border:1px solid var(--line);padding:clamp(24px,2.4vw,36px) clamp(20px,2vw,30px) 34px;display:flex;flex-direction:column;will-change:transform;transition:border-color .6s var(--ease-out)}
+.col::before{content:"";position:absolute;left:-1px;right:-1px;top:-6px;height:6px;background:linear-gradient(90deg,#a99f8d,var(--stone),#a99f8d)}
+.col::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 26px,rgba(236,230,218,.04) 26px 27px)}
+.col:hover{border-color:rgba(201,164,106,.55)}
+.col .ct{display:flex;flex-direction:column;height:100%;opacity:var(--ct,1);transform:translate3d(0,calc((1 - var(--ct,1))*18px),0)}
+.col .num{font-family:var(--display);font-size:clamp(40px,3.6vw,58px);line-height:1;color:transparent;-webkit-text-stroke:1px var(--accent)}
+.col h3{font-family:var(--display);font-weight:400;font-size:clamp(22px,1.9vw,28px);line-height:1.15;margin:20px 0 14px}
+.col p{color:var(--text-secondary);font-size:14.5px;line-height:1.6}
+.col ul{list-style:none;margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:9px;border-top:1px solid var(--line)}
+.col li{font-size:13px;color:var(--stone-2);display:flex;gap:10px;align-items:baseline}
+.col li::before{content:"";width:5px;height:5px;transform:rotate(45deg) translateY(-2px);background:var(--accent);flex:none}
+.base{display:grid;gap:5px;margin:0 -1.2%}
+.base i{display:block;height:14px;background:linear-gradient(180deg,#d9d2c4,#a39b8b)}
+.base i:nth-child(2){height:10px;margin:0 -1.5%;opacity:.55}
+@media (min-width:1180px) and (min-height:780px) and (prefers-reduced-motion: no-preference){
+  .services{height:320vh;padding:0 var(--gut)}
+  .services .pin{position:sticky;top:0;height:100vh;display:flex;align-items:center;padding-top:70px}
+  .services .pin>.wrap{width:100%}
+  .services .svc-head{margin-bottom:clamp(20px,3vh,40px)}
+  .services .title{font-size:clamp(34px,min(4vw,6vh),60px)}
+  .services .eyebrow{margin-bottom:14px}
+  .services .ped{height:clamp(44px,8vh,90px)}
+  .col{min-height:clamp(300px,44vh,440px);padding-top:clamp(18px,2.6vh,32px)}
+  .col h3{margin:clamp(10px,1.6vh,20px) 0 10px}
+  .col ul{padding-top:14px;gap:6px}
+  html.js .services .col{transform:translate3d(0,101%,0)}
+  html.js .services .ped{opacity:0}
+  html.js .services .temple{--ct:0}
+}
+@media not all and (min-width:1180px) and (min-height:780px) and (prefers-reduced-motion: no-preference){
+  .col{min-height:360px}
+  html.js .temple .slot .col{transform:translate3d(0,60px,0);opacity:0;transition:transform 1.2s var(--ease-out),opacity 1.2s var(--ease-out),border-color .6s}
+  html.js .temple.in .slot .col{transform:none;opacity:1}
+  html.js .temple.in .slot:nth-child(2) .col{transition-delay:.1s,.1s,0s}
+  html.js .temple.in .slot:nth-child(3) .col{transition-delay:.2s,.2s,0s}
+  html.js .temple.in .slot:nth-child(4) .col{transition-delay:.3s,.3s,0s}
+}
+@media (max-width:1000px){.colrow{grid-template-columns:1fr 1fr}.ped{display:none}}
+@media (max-width:600px){.colrow{grid-template-columns:1fr}.col{min-height:0}}
+
+/* Faixa corrida */
+.marquee{padding:0;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--canvas-2)}
+.mtrack{display:flex;width:max-content;animation:mq 60s linear infinite;animation-play-state:paused}
+.marquee.on .mtrack{animation-play-state:running}
+.mtrack span{font-family:var(--display);font-size:clamp(44px,6vw,92px);line-height:1;padding:34px 0;white-space:nowrap;display:flex;align-items:center;gap:clamp(28px,3vw,48px);padding-right:clamp(28px,3vw,48px)}
+.mtrack span:nth-child(odd){color:transparent;-webkit-text-stroke:1px rgba(236,230,218,.42)}
+.mtrack span:nth-child(even){color:var(--stone)}
+.mtrack svg{width:.42em;height:.42em;flex:none}
+@keyframes mq{to{transform:translate3d(-50%,0,0)}}
+
+/* Sobre */
+.about .wrap{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(44px,7vw,110px);align-items:center}
+@media (max-width:900px){.about .wrap{grid-template-columns:1fr}}
+.portrait{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:4px;background:#14233a}
+html.js .portrait{clip-path:inset(100% 0 0 0);transition:clip-path 1.6s var(--ease-io)}
+html.js .portrait.in{clip-path:inset(0)}
+.portrait .bg{position:absolute;inset:-12% 0;background:url("lobby-m.jpg") center/cover;filter:saturate(.75) brightness(.55)}
+.portrait .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,23,38,.2),rgba(13,23,38,.75))}
+.portrait img{position:absolute;bottom:0;left:50%;height:88%;width:auto;max-width:none;transform:translateX(-50%)}
+.portrait figcaption{z-index:1}
+.portrait::after{content:"";position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(180deg,transparent,rgba(10,17,30,.85));pointer-events:none}
+.portrait figcaption{position:absolute;left:20px;right:20px;bottom:20px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.portrait figcaption span{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:block}
+.portrait figcaption b{font-family:var(--display);font-weight:400;font-size:22px;display:block}
+.portrait figcaption em{font-style:normal;font-family:var(--display);font-size:60px;line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(236,230,218,.5)}
+.about p.body{color:var(--text-secondary);margin-top:20px;max-width:54ch}
+.about p.body strong{color:var(--stone);font-weight:500}
+.pull{margin-top:34px;padding-left:24px;border-left:1px solid var(--accent);font-family:var(--display);font-size:clamp(22px,2vw,28px);line-height:1.35;color:var(--stone);max-width:30ch}
+.creds{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
+.creds span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;padding:10px 15px;border:1px solid var(--line-strong);border-radius:999px;color:var(--stone-2)}
+
+/* Fechamento do mês (momento interativo) */
+.month{overflow:hidden}
+.month .bgimg{position:absolute;inset:-12% 0;background:url("desk.jpg") center/cover;opacity:.22;will-change:transform}
+.month::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--canvas) 18%,rgba(13,23,38,.7) 60%,rgba(13,23,38,.88)),linear-gradient(180deg,var(--canvas),transparent 18%,transparent 82%,var(--canvas));pointer-events:none}
+.month .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(44px,7vw,110px);align-items:center}
+@media (max-width:900px){.month .wrap{grid-template-columns:1fr}}
+.ledger{position:relative;background:linear-gradient(180deg,#f1ece2,#e6dfd1);color:#1a2333;border-radius:4px;padding:36px 32px 30px;box-shadow:0 50px 90px -40px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.4) inset}
+.ledger::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:var(--canvas)}
+.ledger h4{font-family:var(--mono);font-weight:500;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#6a6355;display:flex;justify-content:space-between;gap:10px;padding-bottom:12px;border-bottom:1px solid rgba(26,35,51,.2)}
+.ledger .line{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:15px 0;border-bottom:1px dashed rgba(26,35,51,.22);font-size:15px}
+.ledger .line em{font-style:normal;font-family:var(--mono);font-size:12.5px;white-space:nowrap}
+.ledger .extra{transition:opacity .6s var(--ease-out),transform .6s var(--ease-out)}
+.ledger .extra em{color:#9c3b2e}
+.ledger.closed .extra{opacity:.28;transform:translateX(10px)}
+.ledger.closed .extra span,.ledger.closed .extra em{text-decoration:line-through}
+.ledger .total{display:flex;justify-content:space-between;align-items:baseline;padding-top:22px;font-family:var(--display);font-size:26px}
+.ledger .stamp{position:absolute;right:26px;bottom:78px;border:2px solid #2b5d47;color:#2b5d47;font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.18em;padding:8px 13px;border-radius:3px;transform:rotate(-9deg) scale(1.6);opacity:0;transition:opacity .35s var(--ease-out),transform .7s var(--ease-out)}
+.ledger.closed .stamp{opacity:1;transform:rotate(-9deg) scale(1)}
+.hold{position:relative;margin-top:28px;width:100%;height:62px;border-radius:999px;border:1px solid var(--line-strong);background:rgba(236,230,218,.04);cursor:pointer;overflow:hidden;user-select:none;-webkit-user-select:none;touch-action:none;font-weight:700;font-size:15px}
+.hold .fill{position:absolute;inset:0;background:var(--accent);transform:scaleX(var(--hp,0));transform-origin:left;will-change:transform}
+.hold .tx{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;mix-blend-mode:difference;color:#fff}
+.hold .tx svg{width:18px;height:18px}
+.hold.ok{border-color:var(--accent)}
+.hint{display:block;margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--text-secondary)}
+
+/* Por que a Viva */
+.why ol{list-style:none;margin-top:clamp(50px,6vw,80px);border-top:1px solid var(--line);counter-reset:w}
+.why li{position:relative;display:grid;grid-template-columns:110px 1fr 1.15fr;gap:30px;padding:38px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.why li::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .9s var(--ease-out)}
+.why li:hover::after{transform:scaleX(1)}
+.why li b{font-family:var(--mono);font-weight:400;color:var(--accent);font-size:12px;letter-spacing:.22em}
+.why li h3{font-family:var(--display);font-weight:400;font-size:clamp(23px,2.3vw,32px);line-height:1.18;transition:transform .7s var(--ease-out)}
+.why li:hover h3{transform:translateX(10px)}
+.why li p{color:var(--text-secondary)}
+@media (max-width:800px){.why li{grid-template-columns:1fr;gap:10px}}
+
+/* Depoimentos */
+.voices{background:linear-gradient(180deg,transparent,var(--canvas-2) 25%,var(--canvas-2) 75%,transparent)}
+.vgrid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;margin-top:clamp(50px,6vw,80px)}
+.vside{display:grid;gap:22px}
+@media (max-width:900px){.vgrid{grid-template-columns:1fr}}
+.quote{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:34px;display:flex;flex-direction:column;gap:26px;transition:border-color .6s var(--ease-out)}
+html.js .quote.reveal{transition:opacity 1.2s var(--ease-out),transform 1.2s var(--ease-out),border-color .6s var(--ease-out)}
+.quote:hover{border-color:rgba(201,164,106,.45)}
+.quote.big{padding:clamp(34px,4vw,56px);background:linear-gradient(160deg,var(--panel-2),var(--panel))}
+.quote blockquote{font-family:var(--display);font-size:clamp(19px,1.6vw,23px);line-height:1.42}
+.quote.big blockquote{font-size:clamp(26px,2.5vw,38px);line-height:1.3}
+.quote .mark{font-family:var(--display);font-size:110px;line-height:.5;height:42px;color:var(--accent)}
+.quote figcaption{display:flex;align-items:center;gap:14px;margin-top:auto}
+.quote figcaption i{width:44px;height:44px;border-radius:50%;background:var(--accent-muted);border:1px solid rgba(201,164,106,.5);display:grid;place-items:center;font-style:normal;font-family:var(--display);color:var(--accent);flex:none}
+.quote figcaption b{font-weight:700;font-size:15px;display:block}
+.stars{color:var(--accent);letter-spacing:3px;font-size:13px}
+.glink{display:inline-flex;gap:10px;align-items:center;margin-top:34px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone-2);text-decoration:none;border-bottom:1px solid var(--line-strong);padding-bottom:6px;transition:color .3s,border-color .3s}
+.glink:hover{color:var(--accent);border-color:var(--accent)}
+
+/* Santa Cruz */
+.city .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(44px,6vw,90px);align-items:center}
+@media (max-width:900px){.city .wrap{grid-template-columns:1fr}}
+.collage{position:relative;aspect-ratio:1.22}
+.collage figure{position:absolute;overflow:hidden;border-radius:4px;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.collage::before{content:"";position:absolute;left:8%;top:12%;right:-4%;bottom:-6%;border:1px solid var(--accent-muted);border-radius:4px}
+.collage figure img{position:absolute;left:0;top:-15%;width:100%;height:130%;object-fit:cover;will-change:transform}
+.collage .c1{left:0;top:0;width:80%;aspect-ratio:540/312}
+.collage .c2{right:0;bottom:0;width:62%;aspect-ratio:800/597;outline:8px solid var(--canvas)}
+.collage figcaption{position:absolute;left:12px;bottom:12px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:rgba(10,17,30,.75);padding:6px 10px;border-radius:3px;color:var(--stone)}
+.addr{margin-top:34px;display:grid;gap:4px}
+.addr a{display:flex;gap:18px;align-items:baseline;text-decoration:none;padding:16px 0;border-bottom:1px solid var(--line)}
+.addr a span{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-secondary);width:92px;flex:none}
+.addr a b{font-weight:500;transition:color .3s;overflow-wrap:anywhere}
+.addr a:hover b{color:var(--accent)}
+
+/* Dúvidas */
+.faq .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(44px,6vw,100px)}
+@media (max-width:900px){.faq .wrap{grid-template-columns:1fr}}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:28px 0;display:flex;justify-content:space-between;gap:20px;align-items:center;font-family:var(--display);font-size:clamp(19px,1.65vw,24px);transition:color .3s}
+summary:hover{color:var(--accent-hover)}
+summary::-webkit-details-marker{display:none}
+summary i{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line-strong);position:relative;transition:transform .6s var(--ease-out),border-color .3s}
+summary i::before,summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1px;background:var(--accent);transform:translate(-50%,-50%)}
+summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+details[open] summary i{transform:rotate(45deg);border-color:var(--accent)}
+details p{color:var(--text-secondary);padding:0 50px 28px 0;max-width:62ch;animation:open .7s var(--ease-out)}
+@keyframes open{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+/* Convite final */
+.final{min-height:100vh;min-height:100svh;display:grid;place-items:center;text-align:center;overflow:hidden;padding-top:140px;padding-bottom:140px}
+.final .bgimg{position:absolute;inset:-14% 0;background:url("entrance.jpg") center/cover;will-change:transform}
+.final::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(8,13,24,.55),rgba(8,13,24,.86) 80%),linear-gradient(180deg,var(--canvas),transparent 20%,transparent 80%,var(--canvas));pointer-events:none}
+.final .wrap{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+.final .eyebrow{justify-content:center}
+.final .eyebrow::after{content:"";width:28px;height:1px;background:currentColor}
+.final h2{font-family:var(--display);font-weight:400;font-size:clamp(46px,8vw,128px);line-height:1;letter-spacing:-.015em;max-width:12ch}
+.final p{margin-top:26px;color:var(--stone);font-size:clamp(17px,1.4vw,20px);max-width:44ch}
+.final .row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:42px}
+
+/* Rodapé */
+footer{padding:80px var(--gut) 36px;border-top:1px solid var(--line);overflow:hidden}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+@media (max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.fgrid{grid-template-columns:1fr}}
+.fgrid h4{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.fgrid p,.fgrid a{font-size:14.5px;color:var(--stone-2);text-decoration:none;display:block;line-height:1.9;overflow-wrap:anywhere}
+.fgrid a:hover{color:var(--text-primary)}
+.social{display:flex;gap:10px;margin-top:18px}
+.social a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);display:grid;place-items:center;transition:border-color .3s,background .3s}
+.social a:hover{border-color:var(--accent);background:var(--accent-muted)}
+.social svg{width:17px;height:17px;fill:var(--stone)}
+.giant{margin-top:70px;font-family:var(--display);font-size:clamp(90px,25vw,400px);line-height:.86;letter-spacing:.06em;text-align:center;user-select:none;white-space:nowrap;display:flex;justify-content:center}
+.giant .gl{display:inline-block;overflow:hidden;padding:.04em .02em}
+.giant i{font-style:normal;display:inline-block;color:transparent;-webkit-text-stroke:1px rgba(236,230,218,.18);background:linear-gradient(180deg,rgba(201,164,106,.55),rgba(201,164,106,0) 85%);-webkit-background-clip:text;background-clip:text;transition:transform 1.4s var(--ease-out),opacity 1.4s var(--ease-out),-webkit-text-stroke-color 1.2s}
+html.js .giant i{transform:translate3d(0,105%,0) rotate(6deg);opacity:0}
+html.js .giant.in i{transform:none;opacity:1}
+.giant.in .gl:nth-child(2) i{transition-delay:.14s}
+.giant.in .gl:nth-child(3) i{transition-delay:.28s}
+.giant.in .gl:nth-child(4) i{transition-delay:.42s}
+.giant .gl:hover i{-webkit-text-stroke-color:var(--accent);transition-delay:0s}
+/* imagens novas */
+.col{overflow:hidden}
+.cimg{position:absolute;left:0;top:0;width:100%;height:58%;object-fit:cover;opacity:.42;-webkit-mask-image:linear-gradient(180deg,#000 10%,transparent);mask-image:linear-gradient(180deg,#000 10%,transparent);transition:opacity .8s var(--ease-out),transform 1.2s var(--ease-out);pointer-events:none}
+.col:hover .cimg{opacity:.62;transform:scale(1.05)}
+.col .ct{position:relative}
+.wimg{position:absolute;left:39.5%;top:50%;width:min(200px,15vw);aspect-ratio:4/3;object-fit:cover;border-radius:4px;opacity:0;transform:translate3d(0,-50%,0) scale(.9) rotate(-3deg);transition:opacity .5s var(--ease-out),transform .7s var(--ease-out);pointer-events:none;z-index:2;box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.why li:hover .wimg{opacity:1;transform:translate3d(0,-50%,0) scale(1) rotate(-3deg)}
+@media (max-width:800px),(hover:none){.wimg{position:static;width:100%;max-width:420px;opacity:1;transform:none;margin-bottom:8px}.why li:hover .wimg{transform:none}}
+.vbg{position:absolute;inset:-12% 0;background:url("voices.jpg") center/cover;opacity:.3;will-change:transform}
+.voices{overflow:hidden}
+.voices::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,var(--canvas),rgba(13,23,38,.55) 30%,rgba(13,23,38,.7) 70%,var(--canvas));pointer-events:none}
+.voices .wrap{position:relative;z-index:2}
+.legal{margin-top:34px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--text-secondary)}
+
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:50;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.6);transform:scale(0);transition:transform .7s var(--ease-out)}
+.wa-float.show{transform:scale(1)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;transition-delay:0s!important}
+  html.js .reveal,html.js .split .w,html.js .temple .slot .col{opacity:1!important;transform:none!important}
+  html.js .portrait{clip-path:none}
+  .statement .sw{opacity:1}
+  .wa-float{transform:scale(1)}
+  .mtrack{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="lw">
+    <svg viewBox="0 0 64 64"><path pathLength="1" d="M6 24 32 9l26 15z"/><rect pathLength="1" x="12" y="28" width="6" height="20"/><rect pathLength="1" x="23" y="28" width="6" height="20"/><rect pathLength="1" x="35" y="28" width="6" height="20"/><rect pathLength="1" x="46" y="28" width="6" height="20"/><rect pathLength="1" x="6" y="51" width="52" height="4"/></svg>
+    <div class="lc">VIVA</div>
+    <div class="ll"><i id="lbar"></i></div>
+    <div class="lp" id="lpct">0</div>
+  </div>
+</div>
+
+<nav class="top" id="nav" aria-label="Principal">
+  <a class="brand" href="#topo" aria-label="Viva Assessoria Condominial, início">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 24 32 10l24 14z" fill="#c9a46a"/><g fill="#ece6da"><rect x="13" y="27" width="6" height="21"/><rect x="23.5" y="27" width="6" height="21"/><rect x="34.5" y="27" width="6" height="21"/><rect x="45" y="27" width="6" height="21"/><rect x="9" y="50" width="46" height="4"/><rect x="6" y="55" width="52" height="3"/></g></svg>
+    <span><b>VIVA</b><small>Assessoria condominial</small></span>
+  </a>
+  <div class="links">
+    <a class="l" href="#servicos">Serviços</a>
+    <a class="l" href="#sobre">Sobre</a>
+    <a class="l" href="#depoimentos">Depoimentos</a>
+    <a class="l" href="#duvidas">Dúvidas</a>
+    <a class="btn mag" href="#contato" data-wa>Pedir orçamento</a>
+    <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  </div>
+</nav>
+<div class="menu" id="menu">
+  <a href="#servicos"><small>01</small>Serviços</a>
+  <a href="#sobre"><small>02</small>Sobre</a>
+  <a href="#depoimentos"><small>03</small>Depoimentos</a>
+  <a href="#duvidas"><small>04</small>Dúvidas</a>
+  <a href="#contato"><small>05</small>Contato</a>
+  <p class="mfoot">(51) 2109-0143 · Santa Cruz do Sul, RS</p>
+</div>
+
+<header class="hero" id="topo">
+  <div class="stage" id="stage">
+    <img class="layer" src="city.jpg" srcset="city-m.jpg 1080w, city.jpg 1920w" sizes="(max-width: 900px) 170vw, 100vw" alt="" aria-hidden="true" style="--ox:50%;--oy:46%" fetchpriority="high">
+    <img class="layer" src="tower.jpg" srcset="tower-m.jpg 1080w, tower.jpg 1920w" sizes="(max-width: 900px) 170vw, 100vw" alt="" aria-hidden="true" style="--ox:72%;--oy:70%">
+    <img class="layer" src="entrance.jpg" srcset="entrance-m.jpg 1080w, entrance.jpg 1920w" sizes="(max-width: 900px) 170vw, 100vw" alt="" aria-hidden="true" style="--ox:50%;--oy:46%">
+    <img class="layer" src="lobby.jpg" srcset="lobby-m.jpg 1080w, lobby.jpg 1920w" sizes="(max-width: 900px) 170vw, 100vw" alt="" aria-hidden="true" style="--ox:52%;--oy:58%">
+    <div class="bloom" aria-hidden="true" style="left:50%;top:44%"></div>
+    <div class="bloom" aria-hidden="true" style="left:72%;top:74%"></div>
+    <div class="bloom" aria-hidden="true" style="left:50%;top:46%"></div>
+    <div class="shade" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="motes" id="motes" aria-hidden="true"></div>
+
+    <div class="band first" data-a="0" data-b="0.225">
+      <div class="kicker">Santa Cruz do Sul · desde 2014</div>
+      <h1 data-split>Seu condomínio em pé, firme e em ordem.</h1>
+      <p>Administração completa e síndico profissional. Você cuida da sua vida. A gente cuida do prédio.</p>
+      <div class="row">
+        <a class="btn mag" href="#contato" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg>Pedir orçamento</a>
+        <a class="btn ghost" href="#servicos">Conhecer os serviços</a>
+      </div>
+    </div>
+    <div class="band" data-a="0.275" data-b="0.475">
+      <div class="kicker">02 · Quatro colunas</div>
+      <h2 data-split>Financeiro. Pessoal. Jurídico. Rotina.</h2>
+      <p>Tudo o que sustenta um condomínio, cuidado por uma só equipe, junto com o síndico.</p>
+    </div>
+    <div class="band" data-a="0.525" data-b="0.725">
+      <div class="kicker">03 · Portas abertas</div>
+      <h2 data-split>Contato rápido. Retorno imediato.</h2>
+      <p>É o que os nossos clientes mais elogiam. Você chama e a gente responde. Simples assim.</p>
+    </div>
+    <div class="band" data-a="0.775" data-b="1.01">
+      <div class="kicker">04 · Sem surpresas</div>
+      <h2 data-split>No fim do mês, o valor que foi combinado.</h2>
+      <p>Taxa de administração fixa, sem cobranças extras. Transparência do primeiro boleto ao último balancete.</p>
+      <div class="row">
+        <a class="btn mag" href="#contato" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg>Falar no WhatsApp</a>
+        <a class="btn ghost" href="#servicos">Ver os serviços</a>
+      </div>
+    </div>
+
+    <div class="chapters" aria-label="Capítulos">
+      <div class="bar"><i id="hbar"></i></div>
+      <ol>
+        <li><button type="button" data-ch="0"><b>01</b><span>Firmeza</span></button></li>
+        <li><button type="button" data-ch="1"><b>02</b><span>Colunas</span></button></li>
+        <li><button type="button" data-ch="2"><b>03</b><span>Agilidade</span></button></li>
+        <li><button type="button" data-ch="3"><b>04</b><span>Transparência</span></button></li>
+      </ol>
+    </div>
+    <div class="cue" id="cue" aria-hidden="true"><span></span>Role para entrar</div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <section class="statement" id="statement" aria-label="Quem somos">
+    <div class="wrap">
+      <span class="eyebrow">A Viva</span>
+      <p class="big" id="bigline">Administrar um condomínio é trabalho de muitas frentes. Se uma falha, todo mundo sente. A Viva existe para que nenhuma falhe.</p>
+      <div class="stats">
+        <div class="stat reveal"><b><span data-count="12" data-years>12</span><sup>anos</sup></b><span>cuidando de condomínios em Santa Cruz do Sul</span></div>
+        <div class="stat reveal"><b>1<sup>º</sup></b><span>síndico profissional qualificado da cidade</span></div>
+        <div class="stat reveal"><b><span data-count="4">4</span></b><span>áreas de assessoria integradas</span></div>
+        <div class="stat reveal"><b><span data-count="0">0</span></b><span>taxas extras no fim do mês</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicos" aria-labelledby="t-serv">
+    <div class="pin">
+      <div class="wrap">
+        <div class="svc-head">
+          <div>
+            <span class="eyebrow">Serviços</span>
+            <h2 class="title split" id="t-serv" data-split>Quatro colunas sustentam o seu condomínio.</h2>
+          </div>
+          <p class="lede reveal">Se uma delas falha, todo mundo sente. Por isso cuidamos das quatro, de forma integrada, lado a lado com o síndico.</p>
+        </div>
+        <div class="temple" id="temple">
+          <div class="ped" id="ped" aria-hidden="true">
+            <svg viewBox="0 0 1000 100" preserveAspectRatio="none">
+              <defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a4064"/><stop offset="1" stop-color="#1b2d47"/></linearGradient></defs>
+              <path class="pf" d="M0 100 500 4 1000 100z"/>
+              <path class="ps" pathLength="1" d="M0 100 500 4 1000 100z"/>
+              <path class="ps" pathLength="1" d="M110 90 500 20 890 90"/>
+            </svg>
+          </div>
+          <div class="colrow">
+            <div class="slot"><article class="col"><img class="cimg" src="svc-fin.jpg" alt="" aria-hidden="true" loading="lazy"><div class="ct">
+              <span class="num">I</span>
+              <h3>Assessoria financeira</h3>
+              <p>Análise financeira, previsão orçamentária e demonstrativos mensais de receitas e despesas. Encargos e obrigações pagos em dia e apoio em qualquer negociação.</p>
+              <ul><li>Previsão orçamentária</li><li>Demonstrativos mensais</li><li>Contas e encargos em dia</li></ul>
+            </div></article></div>
+            <div class="slot"><article class="col"><img class="cimg" src="svc-pes.jpg" alt="" aria-hidden="true" loading="lazy"><div class="ct">
+              <span class="num">II</span>
+              <h3>Assessoria de pessoal</h3>
+              <p>Seleção e orientação dos funcionários, folha de pagamento, guias de encargos sociais e controle de horas extras. Toda a rotina trabalhista acompanhada de perto.</p>
+              <ul><li>Folha de pagamento</li><li>Encargos sociais</li><li>Horas extras sob controle</li></ul>
+            </div></article></div>
+            <div class="slot"><article class="col"><img class="cimg" src="svc-jur.jpg" alt="" aria-hidden="true" loading="lazy"><div class="ct">
+              <span class="num">III</span>
+              <h3>Assessoria jurídica</h3>
+              <p>Cobrança de cotas em atraso, reclamações trabalhistas e consultas do síndico sobre o condomínio. Apoio na fiscalização previdenciária e nas posturas municipais.</p>
+              <ul><li>Cobrança de inadimplentes</li><li>Questões trabalhistas</li><li>Apoio direto ao síndico</li></ul>
+            </div></article></div>
+            <div class="slot"><article class="col"><img class="cimg" src="svc-adm.jpg" alt="" aria-hidden="true" loading="lazy"><div class="ct">
+              <span class="num">IV</span>
+              <h3>Técnico-administrativa</h3>
+              <p>Cobrança das cotas, controle de cada condômino, avisos, balancetes, circulares e convocações. Assembleias, livros do condomínio e escolha do seguro.</p>
+              <ul><li>Balancetes e circulares</li><li>Assembleias</li><li>Livros e seguros</li></ul>
+            </div></article></div>
+          </div>
+          <div class="base" aria-hidden="true"><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee" id="marquee" aria-hidden="true">
+    <div class="mtrack">
+      <span>Transparência<svg viewBox="0 0 64 64"><path d="M8 24 32 10l24 14z" fill="#c9a46a"/><g fill="#c9a46a"><rect x="13" y="27" width="6" height="21"/><rect x="23.5" y="27" width="6" height="21"/><rect x="34.5" y="27" width="6" height="21"/><rect x="45" y="27" width="6" height="21"/><rect x="9" y="50" width="46" height="4"/></g></svg></span>
+      <span>Agilidade<svg viewBox="0 0 64 64"><path d="M8 24 32 10l24 14z" fill="#c9a46a"/><g fill="#c9a46a"><rect x="13" y="27" width="6" height="21"/><rect x="23.5" y="27" width="6" height="21"/><rect x="34.5" y="27" width="6" height="21"/><rect x="45" y="27" width="6" height="21"/><rect x="9" y="50" width="46" height="4"/></g></svg></span>
+      <span>Segurança<svg viewBox="0 0 64 64"><path d="M8 24 32 10l24 14z" fill="#c9a46a"/><g fill="#c9a46a"><rect x="13" y="27" width="6" height="21"/><rect x="23.5" y="27" width="6" height="21"/><rect x="34.5" y="27" width="6" height="21"/><rect x="45" y="27" width="6" height="21"/><rect x="9" y="50" width="46" height="4"/></g></svg></span>
+      <span>Confiança<svg viewBox="0 0 64 64"><path d="M8 24 32 10l24 14z" fill="#c9a46a"/><g fill="#c9a46a"><rect x="13" y="27" width="6" height="21"/><rect x="23.5" y="27" width="6" height="21"/><rect x="34.5" y="27" width="6" height="21"/><rect x="45" y="27" width="6" height="21"/><rect x="9" y="50" width="46" height="4"/></g></svg></span>
+    </div>
+  </section>
+
+  <section class="about" id="sobre" aria-labelledby="t-sobre">
+    <div class="wrap">
+      <figure class="portrait reveal-clip" id="portrait">
+        <div class="bg" data-par="0.08" aria-hidden="true"></div>
+        <img src="sindico.webp" alt="Síndico profissional da Viva, sorrindo de braços cruzados" width="900" height="900">
+        <figcaption><div><span>Síndico profissional</span><b>Viva Assessoria</b></div><em aria-hidden="true">2014</em></figcaption>
+      </figure>
+      <div>
+        <span class="eyebrow">Sobre a Viva</span>
+        <h2 class="title split" id="t-sobre" data-split>Cuidar do seu condomínio é o que nos move todo dia.</h2>
+        <p class="body reveal">A Viva nasceu em 2014 com uma proposta simples: administrar condomínios com excelência. Trouxemos para <strong>Santa Cruz do Sul o primeiro síndico profissional qualificado</strong> da cidade, e hoje atendemos também a região.</p>
+        <p class="body reveal">A equipe vive se atualizando sobre as novidades da área, com formação pelo Secovi e pelo Sindiconet. Cada departamento tem gente qualificada para apoiar a rotina do síndico com responsabilidade e transparência.</p>
+        <p class="pull reveal">Na Viva, a qualidade de vida no seu condomínio é o mais importante.</p>
+        <div class="creds reveal"><span>Formação Secovi</span><span>Formação Sindiconet</span><span>Desde 2014</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="month" aria-labelledby="t-mes">
+    <div class="bgimg" data-par="0.12" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Sem surpresas</span>
+        <h2 class="title split" id="t-mes" data-split>Taxa de administração é para ser previsível.</h2>
+        <p class="lede reveal">Muita administradora combina um valor e, no fim do mês, aparecem os extras. Na Viva, o condomínio paga sempre o valor real que foi combinado. Segure o botão e feche o mês do jeito Viva.</p>
+      </div>
+      <div class="reveal">
+        <div class="ledger" id="ledger">
+          <h4><span>Taxa de administração</span><span>Fechamento do mês</span></h4>
+          <div class="line"><span>Taxa mensal combinada</span><em>valor fixo</em></div>
+          <div class="line extra"><span>Taxa por emissão de boleto</span><em>+ extra</em></div>
+          <div class="line extra"><span>Taxa por assembleia</span><em>+ extra</em></div>
+          <div class="line extra"><span>Taxa por cópia e envio</span><em>+ extra</em></div>
+          <div class="total"><span>Total do mês</span><span id="total">a conferir</span></div>
+          <div class="stamp" aria-hidden="true">SEM SURPRESAS</div>
+        </div>
+        <button class="hold" id="hold" type="button"><span class="fill" aria-hidden="true"></span><span class="tx"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a5 5 0 0 1 5 5v3h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h1V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v3h6V7a3 3 0 0 0-3-3z"/></svg><span id="holdTxt">Segure para fechar o mês</span></span></button>
+        <span class="hint" id="hint">Também funciona com Enter ou espaço.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" aria-labelledby="t-why">
+    <div class="wrap">
+      <span class="eyebrow">Por que a Viva</span>
+      <h2 class="title split" id="t-why" data-split>A administradora certa muda a vida no prédio.</h2>
+      <ol>
+        <li class="reveal"><img class="wimg" src="why-1.jpg" alt="" aria-hidden="true" loading="lazy"><b>01</b><h3>Gestão que entende a complexidade</h3><p>Administrar um condomínio é difícil. Escolher bem quem administra é o que separa um prédio tranquilo de um prédio cheio de problemas.</p></li>
+        <li class="reveal"><img class="wimg" src="why-2.jpg" alt="" aria-hidden="true" loading="lazy"><b>02</b><h3>Feito para o seu condomínio</h3><p>Nada de pacote igual para todos. O atendimento se adapta à realidade e ao dia a dia de cada prédio.</p></li>
+        <li class="reveal"><img class="wimg" src="why-3.jpg" alt="" aria-hidden="true" loading="lazy"><b>03</b><h3>Contrato transparente</h3><p>Taxa mensal diferente do mercado, sem cobranças extras. No fim de cada mês o condomínio sabe exatamente quanto paga.</p></li>
+        <li class="reveal"><img class="wimg" src="why-4.jpg" alt="" aria-hidden="true" loading="lazy"><b>04</b><h3>Resposta rápida</h3><p>Contato rápido e retorno imediato. É o que os nossos clientes mais elogiam.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="voices" id="depoimentos" aria-labelledby="t-dep">
+    <div class="vbg" data-par="0.1" aria-hidden="true"></div>
+    <div class="wrap">
+      <span class="eyebrow">Depoimentos</span>
+      <h2 class="title split" id="t-dep" data-split>Quem é cliente, recomenda.</h2>
+      <div class="vgrid">
+        <figure class="quote big reveal">
+          <div class="mark" aria-hidden="true">“</div>
+          <blockquote>Ótimo atendimento, sempre prontos para auxiliar em qualquer situação. Contato rápido com retorno imediato! Sem sombra de dúvidas, a melhor administração que já tivemos!</blockquote>
+          <figcaption><i aria-hidden="true">P</i><div><b>Paulo Cristiano Iser</b><span class="stars" role="img" aria-label="5 estrelas">★★★★★</span></div></figcaption>
+        </figure>
+        <div class="vside">
+          <figure class="quote reveal">
+            <blockquote>Empresa competente, que conforme o cliente necessita está sempre disposta a ajudar na demanda solicitada.</blockquote>
+            <figcaption><i aria-hidden="true">C</i><div><b>Cristiano Englert</b><span class="stars" role="img" aria-label="5 estrelas">★★★★★</span></div></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>Equipe atenciosa, prestativa e qualificada. Excelente atendimento e execução de serviços. Recomendo!</blockquote>
+            <figcaption><i aria-hidden="true">A</i><div><b>Andrei Barboza</b><span class="stars" role="img" aria-label="5 estrelas">★★★★★</span></div></figcaption>
+          </figure>
+        </div>
+      </div>
+      <a class="glink reveal" href="https://g.co/kgs/dEUGHcY" target="_blank" rel="noopener">Ver todas as avaliações no Google ↗</a>
+    </div>
+  </section>
+
+  <section class="city" id="contato" aria-labelledby="t-city">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Daqui, para a região</span>
+        <h2 class="title split" id="t-city" data-split>Nascemos em Santa Cruz do Sul. Conhecemos cada rua.</h2>
+        <p class="lede reveal">Escritório de portas abertas para síndicos e moradores de Santa Cruz e das cidades vizinhas. Peça um orçamento, tire dúvidas, faça uma reclamação ou mande um elogio.</p>
+        <div class="addr reveal">
+          <a href="tel:+555121090143"><span>Telefone</span><b>(51) 2109-0143</b></a>
+          <a href="mailto:viva@vivaassessoriacondominial.com.br"><span>E-mail</span><b>viva@vivaassessoriacondominial.com.br</b></a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Santo+Ant%C3%B4nio+64+Santa+Cruz+do+Sul+RS" target="_blank" rel="noopener"><span>Endereço</span><b>Rua Santo Antônio, 64 · Santa Cruz do Sul, RS</b></a>
+        </div>
+      </div>
+      <div class="collage reveal">
+        <figure class="c1"><img src="santa-cruz.jpg" alt="Catedral São João Batista e o centro de Santa Cruz do Sul" loading="lazy" data-par="0.04" width="540" height="312"><figcaption>Santa Cruz do Sul</figcaption></figure>
+        <figure class="c2"><img src="fachada.jpg" alt="Fachada azul do escritório da Viva na Rua Santo Antônio, 64" loading="lazy" data-par="-0.04" width="800" height="597"><figcaption>Rua Santo Antônio, 64</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="duvidas" aria-labelledby="t-faq">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Dúvidas</span>
+        <h2 class="title split" id="t-faq" data-split>Perguntas que todo síndico faz.</h2>
+        <p class="lede reveal">Não achou a sua? Manda no WhatsApp que a gente responde rápido.</p>
+      </div>
+      <div class="reveal">
+        <details><summary>O que faz um síndico profissional?<i aria-hidden="true"></i></summary><p>É alguém de fora do prédio, qualificado, que assume a função de síndico. Cuida das contas, dos funcionários, das obras e das assembleias com olhar técnico e sem envolvimento nas discussões entre vizinhos.</p></details>
+        <details><summary>Vocês substituem o síndico ou trabalham junto com ele?<i aria-hidden="true"></i></summary><p>Os dois formatos funcionam. Podemos atuar como síndico profissional ou dar assessoria completa ao síndico morador, que continua no cargo com todo o suporte da equipe.</p></details>
+        <details><summary>Como funciona a taxa de administração?<i aria-hidden="true"></i></summary><p>É um valor mensal fixo, combinado antes. Não existem cobranças extras no fim do mês. O condomínio sempre sabe o valor real que vai pagar.</p></details>
+        <details><summary>Vocês cuidam da cobrança de quem está atrasado?<i aria-hidden="true"></i></summary><p>Sim. Fazemos a cobrança das cotas em dia e das cotas em atraso, inclusive pela via jurídica quando for preciso.</p></details>
+        <details><summary>Atendem condomínios fora de Santa Cruz do Sul?<i aria-hidden="true"></i></summary><p>Sim. A base é em Santa Cruz do Sul, mas atendemos também as cidades da região. Chame no WhatsApp e conte onde fica o seu prédio.</p></details>
+        <details><summary>Como trocar de administradora?<i aria-hidden="true"></i></summary><p>Conversamos com o síndico, apresentamos a proposta e, se aprovada, organizamos a passagem de documentos e contas. O condomínio não fica descoberto em nenhum momento.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="t-final">
+    <div class="bgimg" data-par="0.14" aria-hidden="true"></div>
+    <div class="wrap">
+      <span class="eyebrow">Vamos conversar</span>
+      <h2 class="split" id="t-final" data-split>A porta está aberta.</h2>
+      <p class="reveal">Peça um orçamento sem compromisso para o seu condomínio. A gente responde rápido.</p>
+      <div class="row reveal">
+        <a class="btn mag" href="#contato" data-wa><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg>Pedir orçamento no WhatsApp</a>
+        <a class="btn ghost" href="tel:+555121090143">Ligar (51) 2109-0143</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="#topo" aria-label="Voltar ao topo">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 24 32 10l24 14z" fill="#c9a46a"/><g fill="#ece6da"><rect x="13" y="27" width="6" height="21"/><rect x="23.5" y="27" width="6" height="21"/><rect x="34.5" y="27" width="6" height="21"/><rect x="45" y="27" width="6" height="21"/><rect x="9" y="50" width="46" height="4"/><rect x="6" y="55" width="52" height="3"/></g></svg>
+          <span><b>VIVA</b><small>Assessoria condominial</small></span>
+        </a>
+        <div class="social">
+          <a href="https://www.facebook.com/vivaassessoriadecondominios/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.7-.6z"/></svg></a>
+          <a href="https://www.instagram.com/vivaassessoriadecondominios/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21.9 7c-.1-1.6-.4-3-1.6-4.2S17.6 1.2 16 1.1C14.4 1 9.6 1 8 1.1 6.4 1.2 5 1.5 3.8 2.7S2.2 5.4 2.1 7C2 8.6 2 13.4 2.1 15c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.4 0-8z"/></svg></a>
+          <a href="https://g.co/kgs/dEUGHcY" target="_blank" rel="noopener" aria-label="Perfil no Google"><svg viewBox="0 0 24 24"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zM6.4 14a6 6 0 0 1 0-3.9V7.4H3.1a10 10 0 0 0 0 9.1zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10c.8-2.3 3-4.1 5.6-4.1z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Serviços</h4><a href="#servicos">Financeira</a><a href="#servicos">Pessoal</a><a href="#servicos">Jurídica</a><a href="#servicos">Técnico-administrativa</a></div>
+      <div><h4>Empresa</h4><a href="#sobre">Sobre a Viva</a><a href="#depoimentos">Depoimentos</a><a href="#duvidas">Dúvidas</a></div>
+      <div><h4>Contato</h4><a href="tel:+555121090143">(51) 2109-0143</a><a href="mailto:viva@vivaassessoriacondominial.com.br">viva@vivaassessoriacondominial.com.br</a><p>Rua Santo Antônio, 64<br>Santa Cruz do Sul, RS</p></div>
+    </div>
+    <div class="giant" id="giant" aria-hidden="true"><span class="gl"><i>V</i></span><span class="gl"><i>I</i></span><span class="gl"><i>V</i></span><span class="gl"><i>A</i></span></div>
+    <div class="legal"><span>© <span id="yr">2026</span> Viva Assessoria Condominial</span><span>Algumas imagens do site foram geradas com inteligência artificial.</span></div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#contato" data-wa aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6 0l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg></a>
+
+<script src="lenis.min.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const smooth = (p, e0, e1) => { const t = clamp((p - e0) / (e1 - e0), 0, 1); return t * t * (3 - 2 * t); };
+  const easeOut = t => 1 - Math.pow(1 - t, 3), easeIn = t => t * t * t;
+  const RM = matchMedia('(prefers-reduced-motion: reduce)');
+  const PINQ = matchMedia('(min-width: 1180px) and (min-height: 780px) and (prefers-reduced-motion: no-preference)');
+  const FINE = matchMedia('(hover: hover) and (pointer: fine)');
+  const root = document.documentElement;
+
+  // ---------- WhatsApp e datas ----------
+  const WA = 'https://wa.me/555121090143?text=' + encodeURIComponent('Olá! Vim pelo site e gostaria de um orçamento para o meu condomínio.');
+  $$('[data-wa]').forEach(a => { a.href = WA; a.target = '_blank'; a.rel = 'noopener'; });
+  const year = new Date().getFullYear();
+  $('#yr').textContent = year;
+  $$('[data-years]').forEach(el => { el.dataset.count = year - 2014; el.textContent = year - 2014; });
+
+  // ---------- Divisão de títulos em palavras mascaradas ----------
+  function rng(seed) { let s = seed >>> 0; return () => (s = (s * 1664525 + 1013904223) >>> 0) / 4294967296; }
+  $$('[data-split]').forEach((el, n) => {
+    const text = el.textContent.trim().replace(/\s+/g, ' '), r = rng(11 + n), words = text.split(' ');
+    el.innerHTML = '<span class="sr">' + text + '</span><span aria-hidden="true">' + words.map((w, i) =>
+      '<span class="m"><span class="w" style="--i:' + i + ';--th:' + (i / words.length * .5 + r() * .04).toFixed(3) + '">' + w + '</span></span>').join(' ') + '</span>';
+  });
+  const big = $('#bigline');
+  const bigText = big.textContent.trim();
+  big.innerHTML = '<span class="sr">' + bigText + '</span><span aria-hidden="true">' + bigText.split(' ').map(w => '<span class="sw">' + w + '</span>').join(' ') + '</span>';
+  const bigWords = $$('.sw', big).map(el => ({ el, o: -1 }));
+
+  // ---------- Faixa corrida: repete até passar de 2560px por metade ----------
+  const track = $('.mtrack'), unit = track.innerHTML;
+  track.innerHTML = unit + unit + unit + unit;
+
+  // ---------- Partículas de luz ----------
+  const motes = $('#motes'), r2 = rng(42);
+  for (let i = 0; i < 16; i++) {
+    const m = document.createElement('i');
+    m.style.left = (30 + r2() * 68) + '%';
+    m.style.animationDuration = (12 + r2() * 12) + 's';
+    m.style.animationDelay = (-r2() * 24) + 's';
+    motes.appendChild(m);
+  }
+
+  // ---------- Rolagem suave ----------
+  let lenis = null;
+  function makeLenis() {
+    if (lenis || RM.matches || !window.Lenis) return;
+    lenis = new Lenis({ lerp: 0.075, wheelMultiplier: 0.85, smoothWheel: true });
+    if (root.classList.contains('loading')) lenis.stop();
+  }
+  makeLenis();
+
+  // ---------- Medidas em cache (nada de layout por quadro) ----------
+  const hero = $('#topo'), pinSec = $('#servicos'), statement = $('#statement');
+  let vh = innerHeight, heroTop = 0, heroH = 1, heroRange = 1, pinTop = 0, pinH = 1, pinRange = 1, stTop = 0, stH = 1;
+  const pars = $$('[data-par]').map(el => ({ el, sp: +el.dataset.par, top: 0, h: 0, y: null }));
+  const docTop = el => el.getBoundingClientRect().top + scrollY;
+  function measure() {
+    vh = innerHeight;
+    heroTop = docTop(hero); heroH = hero.offsetHeight; heroRange = Math.max(1, heroH - vh);
+    pinTop = docTop(pinSec); pinH = pinSec.offsetHeight; pinRange = Math.max(1, pinH - vh);
+    stTop = docTop(statement); stH = statement.offsetHeight;
+    pars.forEach(p => { const box = p.el.parentElement; p.top = docTop(box); p.h = box.offsetHeight; });
+  }
+
+  // ---------- HERO ----------
+  const layers = $$('.layer').map(el => ({ el, s: -1, o: -1, v: null }));
+  const blooms = $$('.bloom').map(el => ({ el, s: -1, o: -1 }));
+  const bands = $$('.band').map((el, i, all) => ({ el, a: +el.dataset.a, b: +el.dataset.b, first: i === 0, last: i === all.length - 1, op: -1, k: -1 }));
+  const chBtns = $$('.chapters button'), hbar = $('#hbar'), cue = $('#cue');
+  const T = [.25, .5, .75], W = .05, MIDS = [.1, .375, .625, .9];
+  let heroScrub = false, target = 0, shown = 0, loadK = 0, t0 = Infinity, activeCh = -1, lastBar = -1, lastCue = -1;
+
+  function renderHero(p) {
+    layers.forEach((L, i) => {
+      const a = i ? T[i - 1] - W : 0, b = i < 3 ? T[i] + W : 1;
+      let o = i ? smooth(p, T[i - 1] - W, T[i - 1] + W * .35) : 1;
+      if (i < 3 && p >= T[i] + W) o = 0;
+      const s = 1.03 + .17 * clamp((p - a) / (b - a), 0, 1) + (i < 3 ? .6 * easeIn(clamp((p - (T[i] - W)) / (2 * W), 0, 1)) : 0);
+      // camadas vizinhas ficam prontas (opacidade 0, mas rasterizadas) para a troca não engasgar
+      const v = o > .001 || (p > a - .12 && p < b + .03);
+      if (v !== L.v) { L.el.style.visibility = v ? 'visible' : 'hidden'; L.v = v; }
+      if (!v) return;
+      if (Math.abs(s - L.s) > .0004) { L.el.style.transform = 'scale(' + s.toFixed(4) + ')'; L.s = s; }
+      if (Math.abs(o - L.o) > .003) { L.el.style.opacity = o.toFixed(3); L.o = o; }
+    });
+    blooms.forEach((B, j) => {
+      const x = clamp((p - (T[j] - W)) / (2 * W), 0, 1);
+      const o = x <= 0 || x >= 1 ? 0 : Math.pow(Math.sin(Math.PI * x), 1.7) * .9;
+      if (Math.abs(o - B.o) > .003) { B.el.style.opacity = o.toFixed(3); B.o = o; }
+      if (o > 0) { const s = .55 + x * 1.45; if (Math.abs(s - B.s) > .002) { B.el.style.transform = 'scale(' + s.toFixed(3) + ')'; B.s = s; } }
+    });
+    bands.forEach(B => {
+      const f = Math.min(.03, (B.b - B.a) / 3);
+      const op = (B.first ? 1 : smooth(p, B.a, B.a + f)) * (B.last ? 1 : 1 - smooth(p, B.b - f, B.b));
+      let k = clamp((p - B.a) / .045, 0, 1);
+      if (B.first) k = Math.min(k + 1, 1) * loadK;
+      if (Math.abs(op - B.op) > .004) { B.el.style.opacity = op.toFixed(3); B.el.style.visibility = op < .01 ? 'hidden' : 'visible'; B.op = op; }
+      if (Math.abs(k - B.k) > .004) { B.el.style.setProperty('--k', k.toFixed(3)); B.k = k; }
+    });
+    const ch = p < T[0] ? 0 : p < T[1] ? 1 : p < T[2] ? 2 : 3;
+    if (ch !== activeCh) { chBtns.forEach((b, i) => b.classList.toggle('on', i === ch)); activeCh = ch; }
+    if (Math.abs(p - lastBar) > .001) { hbar.style.transform = 'scaleY(' + p.toFixed(4) + ')'; lastBar = p; }
+    const c = clamp(1 - p * 14, 0, 1);
+    if (Math.abs(c - lastCue) > .01) { cue.style.opacity = c.toFixed(2); lastCue = c; }
+  }
+  function clearHero() {
+    layers.forEach(L => { L.el.removeAttribute('style'); L.s = L.o = -1; L.v = null; });
+    $$('.layer').forEach((el, i) => el.style.cssText = ['--ox:50%;--oy:46%', '--ox:72%;--oy:70%', '--ox:50%;--oy:46%', '--ox:52%;--oy:58%'][i]);
+    blooms.forEach(B => { B.el.style.opacity = ''; B.el.style.transform = ''; B.s = B.o = -1; });
+    bands.forEach(B => { B.el.style.opacity = ''; B.el.style.visibility = ''; B.el.style.removeProperty('--k'); B.op = B.k = -1; });
+  }
+  chBtns.forEach((b, i) => b.addEventListener('click', () => scrollToY(heroTop + MIDS[i] * heroRange)));
+
+  // ---------- Templo de serviços (fixado) ----------
+  const ped = $('#ped'), temple = $('#temple');
+  const cols = $$('.services .col').map(el => ({ el, r: -1 }));
+  let pinMode = false, pedD = -1, ctV = -1;
+  function renderPin(q) {
+    cols.forEach((c, i) => {
+      const r = easeOut(clamp((q - (.04 + i * .075)) / .26, 0, 1));
+      if (Math.abs(r - c.r) > .002) { c.el.style.transform = 'translate3d(0,' + ((1 - r) * 101).toFixed(2) + '%,0)'; c.r = r; }
+    });
+    const d = easeOut(clamp((q - .4) / .2, 0, 1));
+    if (Math.abs(d - pedD) > .003) { ped.style.opacity = d.toFixed(3); ped.style.transform = 'translate3d(0,' + ((1 - d) * -60).toFixed(1) + 'px,0)'; ped.style.setProperty('--draw', d.toFixed(3)); pedD = d; }
+    const ct = clamp((q - .5) / .16, 0, 1);
+    if (Math.abs(ct - ctV) > .004) { temple.style.setProperty('--ct', ct.toFixed(3)); ctV = ct; }
+  }
+  function clearPin() {
+    cols.forEach(c => { c.el.style.transform = ''; c.r = -1; });
+    ped.style.opacity = ''; ped.style.transform = ''; ped.style.removeProperty('--draw'); temple.style.removeProperty('--ct');
+    pedD = ctV = -1;
+  }
+
+  // ---------- Laço único de animação (descansa quando parado) ----------
+  const nav = $('#nav'), waF = $('#waFloat');
+  let rafId = null, idle = 0, lastT = 0, navSolid = null, waShow = null;
+  function update(t) {
+    const dt = Math.min(100, t - (lastT || t)); lastT = t;
+    const y = scrollY;
+    let moving = false;
+    if (heroScrub) {
+      target = clamp((y - heroTop) / heroRange, 0, 1);
+      shown += (target - shown) * (1 - Math.pow(1 - .2, dt / 16.667));
+      if (Math.abs(target - shown) < .00015) shown = target; else moving = true;
+      if (t0 !== Infinity && loadK < 1) { loadK = easeOut(clamp((t - t0) / 1500, 0, 1)); moving = true; }
+      if (y < heroTop + heroH + 50) renderHero(shown);
+    }
+    if (pinMode && y > pinTop - vh && y < pinTop + pinH) renderPin(clamp((y - pinTop) / pinRange, 0, 1));
+    if (!RM.matches && y > stTop - vh && y < stTop + stH) {
+      const start = stTop - vh * .8, end = stTop + stH * .35 - vh * .35;
+      const q = clamp((y - start) / (end - start), 0, 1), n = bigWords.length;
+      bigWords.forEach((w, i) => { const o = .16 + .84 * clamp(q * n * 1.15 - i, 0, 1); if (Math.abs(o - w.o) > .01) { w.el.style.opacity = o.toFixed(2); w.o = o; } });
+    }
+    if (!RM.matches) pars.forEach(P => {
+      if (y + vh < P.top - 200 || y > P.top + P.h + 200) return;
+      const ty = Math.round(((y + vh / 2) - (P.top + P.h / 2)) * -P.sp * 10) / 10;
+      if (ty !== P.y) { P.el.style.transform = 'translate3d(0,' + ty + 'px,0)'; P.y = ty; }
+    });
+    const s = y > heroTop + heroH - vh * .6; if (s !== navSolid) { nav.classList.toggle('solid', s); navSolid = s; }
+    const w = y > heroTop + heroH - vh * .3; if (w !== waShow) { waF.classList.toggle('show', w); waShow = w; }
+    return moving;
+  }
+  function frame(t) {
+    rafId = null;
+    if (lenis) lenis.raf(t);
+    const moving = update(t);
+    if (moving || (lenis && lenis.isScrolling)) idle = 0; else idle++;
+    if (idle < 30) rafId = requestAnimationFrame(frame);
+  }
+  function kick() { idle = 0; if (rafId === null) rafId = requestAnimationFrame(frame); }
+  ['wheel', 'touchstart', 'touchmove', 'keydown', 'scroll', 'pointerdown'].forEach(ev => addEventListener(ev, kick, { passive: true }));
+
+  function scrollToY(yy) {
+    if (lenis) { lenis.scrollTo(yy, { duration: 1.8 }); kick(); }
+    else scrollTo({ top: yy, behavior: RM.matches ? 'auto' : 'smooth' });
+  }
+  $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href'); if (id.length < 2) return;
+    const el = document.querySelector(id); if (!el) return;
+    e.preventDefault(); closeMenu();
+    scrollToY(id === '#topo' ? 0 : id === '#servicos' && pinMode ? pinTop + pinRange * .62 : docTop(el) - 20);
+  }));
+
+  // ---------- Modos (vivos, mudam com rotação e preferências) ----------
+  function applyModes() {
+    const scrub = !RM.matches;
+    if (scrub !== heroScrub) { heroScrub = scrub; if (!scrub) clearHero(); }
+    if (PINQ.matches !== pinMode) { pinMode = PINQ.matches; if (!pinMode) clearPin(); }
+    if (RM.matches) { if (lenis) { lenis.destroy(); lenis = null; } pinToFinal(); }
+    else { makeLenis(); if (lenis && !root.classList.contains('loading')) lenis.start(); }
+    measure(); kick();
+  }
+  function pinToFinal() {
+    $$('.reveal,.split,.temple,.portrait,.giant').forEach(el => el.classList.add('in'));
+    bigWords.forEach(w => { w.el.style.opacity = ''; w.o = -1; });
+    pars.forEach(P => { P.el.style.transform = ''; P.y = null; });
+    if (ledgerFinish && !holdDone) ledgerFinish();
+  }
+  [RM, PINQ].forEach(m => m.addEventListener('change', applyModes));
+  let rsT; addEventListener('resize', () => { clearTimeout(rsT); rsT = setTimeout(() => { measure(); kick(); }, 120); });
+  if ('ResizeObserver' in window) new ResizeObserver(() => { measure(); kick(); }).observe(document.body);
+
+  // ---------- Entradas ----------
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .2, rootMargin: '0px 0px -6% 0px' });
+  $$('.reveal,.split,.temple').forEach(el => { if (!el.closest('.band')) io.observe(el); });
+  // o retrato começa recortado (área zero), então observamos o pai
+  const portrait = $('#portrait');
+  new IntersectionObserver((es, o) => es.forEach(e => { if (e.isIntersecting) { portrait.classList.add('in'); o.disconnect(); } }), { threshold: .15 }).observe(portrait.parentElement);
+  new IntersectionObserver((es, o) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); o.disconnect(); } }), { threshold: .35 }).observe($('#giant'));
+  const mq = $('#marquee');
+  new IntersectionObserver(es => es.forEach(e => mq.classList.toggle('on', e.isIntersecting))).observe(mq);
+
+  // Contadores
+  const cio = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return; cio.unobserve(e.target);
+    const el = e.target, to = +el.dataset.count; if (RM.matches || to === 0) { el.textContent = to; return; }
+    const st = performance.now();
+    const step = now => { const k = easeOut(clamp((now - st) / 1600, 0, 1)); el.textContent = Math.round(to * k); if (k < 1) requestAnimationFrame(step); };
+    el.textContent = 0; requestAnimationFrame(step);
+  }), { threshold: .6 });
+  $$('[data-count]').forEach(el => cio.observe(el));
+
+  // ---------- Botões magnéticos ----------
+  $$('.mag').forEach(el => {
+    el.addEventListener('pointermove', e => {
+      if (!FINE.matches || RM.matches) return;
+      const r = el.getBoundingClientRect();
+      el.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * .22).toFixed(1) + 'px,' + ((e.clientY - r.top - r.height / 2) * .32).toFixed(1) + 'px)';
+    });
+    el.addEventListener('pointerleave', () => { el.style.transform = ''; });
+  });
+
+  // ---------- Menu ----------
+  const burger = $('#burger');
+  function closeMenu() { if (!document.body.classList.contains('menu-open')) return; document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', 'false'); if (lenis) lenis.start(); }
+  burger.addEventListener('click', () => {
+    const open = !document.body.classList.contains('menu-open');
+    document.body.classList.toggle('menu-open', open); burger.setAttribute('aria-expanded', String(open));
+    if (lenis) open ? lenis.stop() : lenis.start();
+  });
+  addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+  // ---------- Fechar o mês (segurar) ----------
+  const hold = $('#hold'), ledger = $('#ledger'), holdTxt = $('#holdTxt'), total = $('#total');
+  let hp = 0, holding = false, hraf = null, hlast = 0, holdDone = false;
+  function ledgerFinish() { holdDone = true; hp = 1; hold.style.setProperty('--hp', 1); ledger.classList.add('closed'); hold.classList.add('ok'); holdTxt.textContent = 'Mês fechado. Só o valor combinado.'; total.textContent = 'valor fixo'; }
+  function hstep(now) {
+    const dt = Math.min(64, now - (hlast || now)); hlast = now;
+    hp = clamp(hp + (holding ? dt / 1300 : -dt / 900), 0, 1);
+    hold.style.setProperty('--hp', hp.toFixed(3));
+    if (hp >= 1) { ledgerFinish(); hraf = null; hlast = 0; return; }
+    if (hp <= 0 && !holding) { hraf = null; hlast = 0; return; }
+    hraf = requestAnimationFrame(hstep);
+  }
+  function hStart(e) { if (holdDone) return; if (e) e.preventDefault(); if (RM.matches) { ledgerFinish(); return; } holding = true; if (!hraf) hraf = requestAnimationFrame(hstep); }
+  function hStop() { holding = false; if (!holdDone && !hraf) hraf = requestAnimationFrame(hstep); }
+  hold.addEventListener('pointerdown', hStart);
+  ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => hold.addEventListener(ev, hStop));
+  hold.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && !e.repeat) hStart(e); });
+  hold.addEventListener('keyup', e => { if (e.key === 'Enter' || e.key === ' ') hStop(); });
+
+  // ---------- Abertura (espera a primeira imagem e as fontes) ----------
+  const loader = $('#loader'), lbar = $('#lbar'), lpct = $('#lpct');
+  let revealed = false;
+  function reveal() {
+    if (revealed) return; revealed = true;
+    loader.classList.add('out');
+    root.classList.remove('loading');
+    measure();
+    if (lenis) lenis.start();
+    t0 = performance.now() + 350; kick();
+    setTimeout(() => loader.remove(), 1300);
+    // decodifica as outras cenas do herói antes de serem vistas
+    setTimeout(() => $$('.layer').slice(1).forEach(img => { if (img.decode) img.decode().catch(() => {}); }), 600);
+  }
+  if (RM.matches) { loader.remove(); root.classList.remove('loading'); t0 = 0; loadK = 1; }
+  else {
+    const first = $('.layer');
+    const waitImg = first.complete ? Promise.resolve() : new Promise(r => { first.addEventListener('load', r, { once: true }); first.addEventListener('error', r, { once: true }); });
+    const fontsOrTimeout = Promise.race([document.fonts ? document.fonts.ready : Promise.resolve(), new Promise(r => setTimeout(r, 1400))]);
+    const tasks = [waitImg.then(() => first.decode ? first.decode().catch(() => {}) : 0), fontsOrTimeout];
+    let done = 0, shownPct = 0; const tStart = performance.now();
+    tasks.forEach(p => p.then(() => done++));
+    (function tickL(now) {
+      if (revealed) return;
+      const goal = Math.min(done / tasks.length * 100, clamp((now - tStart) / 1100, 0, 1) * 100);
+      shownPct += (Math.max(goal, done === tasks.length ? 100 : goal) - shownPct) * .12;
+      lbar.style.setProperty('--lp', (shownPct / 100).toFixed(3)); lpct.textContent = Math.round(shownPct);
+      if (done === tasks.length && shownPct > 99.2) { lpct.textContent = 100; setTimeout(reveal, 180); return; }
+      requestAnimationFrame(tickL);
+    })(tStart);
+    setTimeout(reveal, 3800);
+  }
+
+  document.addEventListener('visibilitychange', () => document.body.classList.toggle('paused', document.hidden));
+  addEventListener('load', () => { measure(); kick(); });
+  applyModes();
+  if (RM.matches) pinToFinal();
+})();
+</script>
+</body>
+</html>
